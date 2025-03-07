@@ -12,5 +12,6 @@ public class App {
        // System.out.println("Hello World!");
         App app= new App();
         System.out.println("Sum:: "+app.sum(10,20));
+        System.out.println("Sum amount:: "+app.sum(10,20));
     }
 }
