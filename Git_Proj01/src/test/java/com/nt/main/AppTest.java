@@ -34,4 +34,12 @@ public class AppTest {
         assertEquals(expected, actual);
         
     }
+    @Test
+    public void zero() {
+        App app=new App();
+        int expected=0;
+        int actual=app.sum(0, 0);
+        assertEquals(expected, actual);
+        
+    }
 }
