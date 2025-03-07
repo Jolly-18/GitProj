@@ -1,19 +1,37 @@
 package com.nt.main;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * Unit test for simple App.
- */
+
 public class AppTest {
 
-    /**
-     * Rigorous Test :-)
-     */
+   
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void sumWithPos() {
+        App app=new App();
+        int expected=500;
+        int actual=app.sum(200, 300);
+        assertEquals(expected, actual);
+        
+    }
+    @Test
+    public void sumWithNeg() {
+        App app=new App();
+        int expected=-500;
+        int actual=app.sum(-200,-300);
+        assertEquals(expected, actual);
+        
+    }
+    
+    @Test
+    public void sumWithMix() {
+        App app=new App();
+        int expected=100;
+        int actual=app.sum(-200, 300);
+        assertEquals(expected, actual);
+        
     }
 }
